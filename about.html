@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinh ảnh từ văn bản - Giới thiệu</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous">
+  <style>
+    .jumbotron {
+      background-color: #f8f9fa;
+      padding: 80px 0;
+    }
+    .content-section {
+      padding-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Sinh ảnh từ văn bản</h1>
+      <p class="lead">Dự án giúp tạo ra ảnh từ văn bản một cách dễ dàng và nhanh chóng.</p>
+    </div>
+    <div class="row content-section">
+      <div class="col-md-6">
+        <h2>Giới thiệu</h2>
+        <p>Chào mừng bạn đến với dự án "Sinh ảnh từ văn bản". Đây là một dự án đơn giản nhưng mạnh mẽ, cho phép bạn tạo ra các hình ảnh độc đáo từ văn bản của mình.</p>
+        <p>Ứng dụng này được xây dựng với mục đích cung cấp một cách dễ dàng và thuận tiện để chuyển đổi các ý tưởng và câu chuyện của bạn thành hình ảnh đẹp mắt.</p>
+        <p>Bạn có thể tận dụng các tính năng của ứng dụng như lưu ảnh và tải về để chia sẻ với bạn bè và đồng nghiệp.</p>
+      </div>
+      <div class="col-md-6">
+        <h2>Các thư viện và model</h2>
+        <p>Trong dự án này, chúng tôi sử dụng các thư viện và model sau:</p>
+        <ul>
+          <li><strong>PyTorch:</strong> PyTorch là một thư viện machine learning mã nguồn mở được sử dụng cho việc xây dựng và huấn luyện mô hình deep learning.</li>
+          <li><strong>Flask:</strong> Flask là một framework web siêu nhẹ và linh hoạt được viết bằng Python, giúp dễ dàng tạo ra các ứng dụng web đơn giản và mạnh mẽ.</li>
+          <li><strong>Bootstrap:</strong> Bootstrap là một framework front-end mã nguồn mở để phát triển giao diện người dùng web đẹp và hiệu quả.</li>
+          <li><strong>Stable Diffusion Models:</strong> Dự án sử dụng một số mô hình được xây dựng trên nền tảng Stable Diffusion để tạo ra ảnh từ văn bản.</li>
+          <li><strong>Tkinter hoặc PyQt:</strong> Đối với ứng dụng desktop, bạn có thể sử dụng Tkinter hoặc PyQt, hai thư viện được sử dụng phổ biến trong Python để tạo ra giao diện người dùng đồ họa (GUI).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row content-section">
+      <div class="col">
+        <h2>Hướng dẫn sử dụng</h2>
+        <p>Để sử dụng dự án, bạn cần nhập văn bản muốn tạo thành ảnh vào trang web. Sau đó, nhấn nút "Tạo ảnh" và bạn sẽ nhận được ảnh tương ứng với văn bản đó.</p>
+        <p>Có thể lưu ảnh được tạo ra bằng cách nhấn nút "Lưu ảnh".</p>
+      </div>
+    </div>
+    <div class="row content-section">
+      <div class="col">
+        <h2>Lưu ý</h2>
+        <p>Ảnh khi được tạo ra có thiên hướng theo bức tranh màu nước.</p>
+      </div>
+    </div>
+    <div class="row content-section text-center">
+      <div class="col">
+        <h2>Sản phẩm demo</h2>
+        <p>Dưới đây là một sản phẩm demo minh họa về cách sử dụng dự án:</p>
+        <img src="./backup/static/output.jpg" alt="Sản phẩm demo" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-ASpPl3Gn/L+kQ4z4bQfFJq+2VvPe4Fzy4EdjSc6O94xU1RsnKq+auFvdRy0zgfV9"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-pzgfDQlgaxqyxH7jZYn8WTPkFzVg8HQb4A5yiyyRnm6Y7f/TcEdqVq2K1m4iw1bH"
+    crossorigin="anonymous"></script>
+</body>
+</html>

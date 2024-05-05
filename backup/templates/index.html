@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text 2 Image</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: orange;
+            border-color: orange;
+        }
+
+        .btn-primary:hover {
+            background-color: darkorange;
+            border-color: darkorange;
+        }
+
+        .btn-primary:focus {
+            box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.5);
+        }
+
+        .result-img {
+            margin-top: 20px;
+        }
+
+        .disclaimer {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="text-center">Xây dựng Web sinh ảnh từ văn bản <br> Stable Diffusion, Python và Flask</h1>
+                    </div>
+                    <div class="card-body">
+                        <form action="/backup/static" method="post">
+                            <div class="form-group">
+                                <label for="prompt">Nhập vào text bạn cần để Get ảnh:</label>
+                                <textarea class="form-control" id="prompt" name="prompt" rows="3"
+                                    style="font-size: 16pt"></textarea>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-primary">GET ẢNH</button>
+                            </div>
+                            <div class="result-img text-center">
+                                <img src="{{ image_url }}" class="img-fluid" />
+                                <p class="disclaimer">Lưu ý: Ảnh được lấy là ảnh được lấy từ model, ảnh tương ứng với ảnh màu</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-ASpPl3Gn/L+kQ4z4bQfFJq+2VvPe4Fzy4EdjSc6O94xU1RsnKq+auFvdRy0zgfV9"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-pzgfDQlgaxqyxH7jZYn8WTPkFzVg8HQb4A5yiyyRnm6Y7f/TcEdqVq2K1m4iw1bH"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
